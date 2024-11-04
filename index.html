@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document test javascript memo</title>
+    <style>
+        /* CSSを書くところ */
+        h1 {
+            color: blue
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 実際に表示される領域 -->
+    <h1>Hello こんにちは</h1>
+    <!-- <div>hello html</div> -->
+    <br>
+    
+    <input id ="input1">
+    <button onclick="clicked();">ボタン</button>
+    <div id="output1"></div>
+
+    <script>
+        // JavaScriptを書くところ
+        console.log("Hello Javascript");
+        function clicked(){
+            const input = document.getElementById("input1");
+            const output = document.getElementById("output1");
+            output.innerHTML = `おいそこは`;
+            output.innerHTML += `<br><b>${input.value}</b>`;
+        }
+
+    </script>
+
+</body>
+</html>
+
+<!-- //////  /*   */  ////////// -->
+<!--  -->
+<!-- ////// 
+<script src="./indexjavascript1.js"></script> 
+<div class="contents"></div>
+///////// -->
+
+
